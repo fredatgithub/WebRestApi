@@ -10,6 +10,10 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
+    env:
+      Solution_Name: \src\services\WebApplication3\WebApplication3.csproj                         # Replace with your solution name, i.e. MyWpfApp.sln.
+      Test_Project_Path: \WebApplicationRESTApi.Tests\WebApplicationRESTApi.Tests.csproj  # Replace with the path to your test project, i.e. MyWpfApp.Tests\MyWpfApp.Tests.csproj.
+
 
     steps:
     - uses: actions/checkout@v2
